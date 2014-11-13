@@ -1,5 +1,5 @@
 public interface DataReader {
 
-	public void readData();
+	public Graph readData();
 
 }
