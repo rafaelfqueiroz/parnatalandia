@@ -1,7 +1,32 @@
 public class Node {
 
 	private List<Edge> edges;
-	private String content;
+	private int index;
+	private static int quantityOfLinks = 0;
 
 	public Node() {}
+
+	public List<Edge> getEdges() {
+		return this.edges;
+	}
+
+	public int getIndex() {
+		return	this.index;
+	}
+
+	public static int getQuantityOfLinks() {
+		return this.quantityOfLinks;
+	}
+
+	public static void setQuantityOfLinks(int quantityOfLinks) {
+		this.quantityOfLinks = quantityOfLinks;
+	}
+
+	public void setEdges(List<Edge> edges) {
+		this.edges = edges;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
 }
