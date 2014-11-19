@@ -1,3 +1,7 @@
+package domain;
+
+import java.util.List;
+
 public class Node {
 
 	private List<Edge> edges;
@@ -15,11 +19,11 @@ public class Node {
 	}
 
 	public static int getQuantityOfLinks() {
-		return this.quantityOfLinks;
+		return quantityOfLinks;
 	}
 
 	public static void setQuantityOfLinks(int quantityOfLinks) {
-		this.quantityOfLinks = quantityOfLinks;
+		quantityOfLinks = quantityOfLinks;
 	}
 
 	public void setEdges(List<Edge> edges) {

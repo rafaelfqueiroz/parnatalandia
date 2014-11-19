@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -9,14 +11,14 @@ public class Graph {
 
 	public Graph() {
 		this.edges = new ArrayList<Edge>();
-		this.nodes = new ArrayList<nodes>();
+		this.nodes = new ArrayList<Node>();
 	}
 
-	public List<Edges> getEdges() {
+	public List<Edge> getEdges() {
 		return this.edges;
 	}
 
-	public List<Nodes> getNodes() {
+	public List<Node> getNodes() {
 		return this.nodes;
 	}
 
@@ -41,7 +43,6 @@ public class Graph {
 	}
 
 	public void addEdge(Edge edge) {
-		this.edges.add(edges);
+		this.edges.add(edge);
 	}
-
 }
