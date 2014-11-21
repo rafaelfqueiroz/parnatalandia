@@ -12,7 +12,7 @@ public class Node {
 	public Node() {}
 
 	public List<Edge> getEdges() {
-		return this.edges;
+		return this	.edges;
 	}
 
 	public int getIndex() {
