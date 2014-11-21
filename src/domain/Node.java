@@ -7,6 +7,7 @@ public class Node {
 	private List<Edge> edges;
 	private int index;
 	private static int quantityOfLinks = 0;
+	public Set set;
 
 	public Node() {}
 
