@@ -3,11 +3,11 @@ package domain;
 import java.util.List;
 
 public class Set {
-	
 	private List<Node> nodes;
+	private List<Edge> edges;
 	private Node representative;
 
-	public Set(Node representative){
+	public Set(Node representative) {
 		this.representative = representative;
 		nodes.add(representative);
 	}
@@ -26,5 +26,9 @@ public class Set {
 
 	public int getQttOfNodes(){
 		return this.nodes.size();
+	}
+
+	public Node getNodeAt(int index){
+		return nodes.get(index);
 	}
 }

@@ -42,7 +42,7 @@ public class Graph {
 		this.nodes.add(node);
 	}
 
-	public void addEdge(Edge edge) {
+	public void addNodedge(Edge edge) {
 		this.edges.add(edge);
 	}
 }
