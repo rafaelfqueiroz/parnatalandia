@@ -8,6 +8,7 @@ public class Graph {
 	private List<Edge> edges;
 	private List<Node> nodes;
 	private Node startNode;
+	private int currentEdgeIndex;
 
 	public Graph() {
 		this.edges = new ArrayList<Edge>();
@@ -42,7 +43,15 @@ public class Graph {
 		this.nodes.add(node);
 	}
 
-	public void addNodedge(Edge edge) {
+	public void addEdge(Edge edge) {
 		this.edges.add(edge);
+	}
+
+	public int getCurrentEdgeIndex(){
+		return this.currentEdgeIndex;
+	}
+
+	public void setCurrentEdgeIndex(int index){
+		this.currentEdgeIndex = index;
 	}
 }

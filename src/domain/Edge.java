@@ -1,6 +1,8 @@
 package domain;
 
-public class Edge {
+import java.io.Serializable;
+
+public class Edge implements Serializable{
 
 	private Node firstNode;
 	private Node secondNode;

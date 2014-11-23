@@ -9,7 +9,7 @@ import utils.GraphBuilder;
 
 public class FileReaderImpl implements DataReader {
 
-	private static final String PATH_OF_FILE = "";
+	private static final String PATH_OF_FILE = "/home/hamurabi/Downloads/res5gra3.txt";
 	private static final int FIRST_LINE = 1;
 
 	public Graph readData() {

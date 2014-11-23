@@ -1,8 +1,9 @@
 package domain;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Node {
+public class Node implements Serializable{
 
 	private List<Edge> edges;
 	private int index;
@@ -19,7 +20,7 @@ public class Node {
 	}
 
 	public List<Edge> getEdges() {
-		return this	.edges;
+		return this.edges;
 	}
 
 	public int getIndex() {
