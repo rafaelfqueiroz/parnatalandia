@@ -10,6 +10,8 @@ class Simulate {
 
 	public Simulate(Graph g) {
 		this.graph = g;
+		this.edges = g.getEdges();
+		this.nodes = g.getNodes();
 	}
 
 	public void setGraph(Graph g) {
@@ -17,9 +19,10 @@ class Simulate {
 	}
 	
 	public void startSimulation() {
-
+		
 	}
 
-
-
+	public void run(){
+		
+	}
 }
