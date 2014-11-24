@@ -42,4 +42,8 @@ public class Node implements Serializable{
 	public void setIndex(int index) {
 		this.index = index;
 	}
+	
+	public Set getSet() {
+		return this.set;
+	}
 }

@@ -1,21 +1,19 @@
 package domain;
 
-import java.util.List;
 import utils.CloneMachine;
 
 public class Simulator {
-	public void simulate(Set set, Graph graph, Result result) {
+	public void simulate(Set set, Graph graph, int currentEdgeIndex, Result result) {
 		Set s = new Set();
-		CloneMachine.getInstance().clone(set, Set.class);
+		s = CloneMachine.getInstance().clone(set, Set.class);
 
-		if (graph.getCurrentEdgeIndex() < graph.getEdges().size()){
-			graph.setCurrentEdgeIndex(graph.getCurrentEdgeIndex() + 1);
-			simulate(s, graph, result);
-
-			if (UF.find(graph.getEdges().get(graph.getCurrentEdgeIndex()).getFirstNode()) != 
-				UF.find(graph.getEdges().get(graph.getCurrentEdgeIndex()).getSecondNode())) {
-				s.addEdgeOnList(graph.getEdges().get(graph.getCurrentEdgeIndex()));
-				simulate(s, graph, result);
+		if (currentEdgeIndex < graph.getEdges().size()) {
+			simulate(s, graph, currentEdgeIndex+1, result);
+			Node first = UF.find(graph.getEdges().get(currentEdgeIndex).getFirstNode());
+			Node second = UF.find(graph.getEdges().get(currentEdgeIndex).getSecondNode()); 
+			if (first != second) {
+				s.addEdgeOnList(graph.getEdges().get(currentEdgeIndex));
+				simulate(s, graph, currentEdgeIndex + 1, result);
 			}
 		} else {
 			if (s.validate(Node.getQuantityOfLinks())) {

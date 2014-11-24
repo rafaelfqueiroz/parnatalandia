@@ -2,7 +2,7 @@ package domain;
 
 import java.io.Serializable;
 
-public class Edge implements Serializable{
+public class Edge implements Serializable {
 
 	private Node firstNode;
 	private Node secondNode;
