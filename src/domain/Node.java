@@ -9,7 +9,7 @@ public class Node implements Serializable{
 	private int index;
 	private static int quantityOfLinks = 0;
 	public Set set;
-
+	
 	public Node() {
 		this.set = new Set(this);
 	}
@@ -31,8 +31,8 @@ public class Node implements Serializable{
 		return quantityOfLinks;
 	}
 
-	public static void setQuantityOfLinks(int quantityOfLinks) {
-		quantityOfLinks = quantityOfLinks;
+	public static void setQuantityOfLinks(int qttOfLinks) {
+		quantityOfLinks = qttOfLinks;
 	}
 
 	public void setEdges(List<Edge> edges) {

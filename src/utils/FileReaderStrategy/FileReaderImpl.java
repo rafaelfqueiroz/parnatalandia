@@ -13,9 +13,6 @@ public class FileReaderImpl implements DataReader {
 	private static final int FIRST_LINE = 1;
 
 	public Graph readData() {
-		//TODO
-		//Instanciar um InputStream passando o path e realizar a leitura.
-		//Para cada linha lida, enviar para a classe GraphBuilder que irá criar os nodos e arestas.
 		BufferedReader bReader = null;
 		Graph graph = null;
 		try {
