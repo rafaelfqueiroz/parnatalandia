@@ -1,6 +1,7 @@
 package domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Set implements Serializable {
@@ -9,10 +10,13 @@ public class Set implements Serializable {
 	private Node representative;
 
 	public Set() {
-
+		this.nodes = new ArrayList<Node>();
+		this.edges = new ArrayList<Edge>();
 	}
 
 	public Set(Node representative) {
+		this.nodes = new ArrayList<Node>();
+		this.edges = new ArrayList<Edge>();
 		this.representative = representative;
 		nodes.add(representative);
 	}
