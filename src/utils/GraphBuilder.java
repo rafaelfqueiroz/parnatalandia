@@ -20,6 +20,7 @@ public class GraphBuilder {
 		Node firstNode = new Node();
 		firstNode.setIndex(-1);
 		this.graph.addNode(firstNode);
+		this.graph.setStartNode(firstNode);
 	}
 
 	public void createAndAddNode(int edgeWeight, int index) {
